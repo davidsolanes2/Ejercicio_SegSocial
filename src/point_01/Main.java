@@ -12,7 +12,7 @@ public class Main {
         Persona maria =  new Persona("39425654W", "33333333", "Maria", "Gallego", 55, 61300.20);
         Persona carlos = new Persona("39425355Q", "22222222", "Carlos", "Torres", 22, 23000.00);
         Persona anna = new Persona("39425987J", "444444444", "Anna", "Pina", 26, 17654.88);
-        Persona cristina = new Persona("39426987J", "444444444", "cristina", "Pina", 26, 17654.88);
+        Persona cristina = new Persona("39426987J", "444444444", "Cristina", "Pina", 26, 17654.88);
 
         seguridadSocial.altaPersona(jose);
         seguridadSocial.altaPersona(maria);
@@ -31,9 +31,20 @@ public class Main {
 
         System.out.println("Obtener Persona Por NumSS: " + seguridadSocial.obtenerPersonaPorNumSS(maria.getSegsocial()));
 
-        System.out.println("Obtener Personas Rango Salarial: " + seguridadSocial.obtenerPersonasRangoSalarial(23000.00, 45000.00));
+        System.out.println("Obtener Personas Rango Salarial: " + seguridadSocial.obtenerPersonasRangoSalarial(16000.00, 45000.00));
 
         System.out.println("Obtener Personas Mayores Que: " + seguridadSocial.obtenerPersonasMayoresQue(25));
+
+        seguridadSocial.obtenerSalarioMaximo();
+
+        seguridadSocial.obtenerSalarioMinimo();
+
+        System.out.println("Ordenar Personas por DNI              : " + seguridadSocial.ordenarPersonasDNI());
+        System.out.println("Ordenar Personas por Seguridad Social : " + seguridadSocial.ordenarPersonasSegSocial());
+        System.out.println("Ordenar Personas por Nombre           : " + seguridadSocial.ordenarPersonasNombre());
+        System.out.println("Ordenar Personas por Apellido         : " + seguridadSocial.ordenarPersonasApellido());
+        System.out.println("Ordenar Personas por Edad             : " + seguridadSocial.ordenarPersonasEdad());
+        System.out.println("Ordenar Personas por Salario          : " + seguridadSocial.ordenarPersonasSalario());
 
     }
 
