@@ -190,9 +190,6 @@ public class SeguridadSocial {
 
     }
 
-
-
-
     @Override
     public String toString() {
         return "SeguridadSocial{"+
